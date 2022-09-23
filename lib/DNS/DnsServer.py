@@ -1,14 +1,12 @@
-#from ReadWriteFile import ReadFile
-#from ..ReadWriteFile.ReadFile import ReadFile
 import dns
 
 class DNS:
-   def __init__(self, domain):
-      self.domain=domain
-      self.IPList=[]
+   def __init__(self, dnsIPs, domain):
+      self.domain=domain #List of domains consulting
+      self.dnsIPs=dnsIPs #List of DNS ips
 
    def consultDomain(self):
-      print("self.domain= ", self.domain)
-
-   def showIpDNS(self):
-      None
+      print(" DOMAIN = ", self.domain)
+   
+   def viewDNSIps(self):
+      print(" MY DNS = ", self.dnsIPs)
