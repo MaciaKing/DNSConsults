@@ -3,12 +3,13 @@ from lib.ReadWriteFile.ReadFile import ReadFile
 from lib.DNS.DnsServer import DNS
 
 #GLOBAL VARS
-PATHdnsIPS= "/lib/DNS/dnsIp.txt"
+PATHdnsIPS= "/lib/DNS/dnsIp.txt" #All IPs from DNS
 DNSIP=[] #All IPs of DNS
 
 def loadDnsIP():
     '''
-        We load all the IPs of DNS servers on DNSIP. 
+        We load all the IPs of DNS servers on DNSIP. The 
+        Ips are on the file "/lib/DNS/dnsIp.txt". 
     '''
     global DNSIP
 
