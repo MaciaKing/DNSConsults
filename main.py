@@ -3,8 +3,8 @@ from lib.ReadWriteFile.ReadFile import ReadFile
 from lib.DNS.DnsServer import DNS
 
 #GLOBAL VARS
-PATHdnsIPS= "/lib/DNS/dnsIp.txt" #All IPs from DNS
-DNSIP=[] #All IPs of DNS
+PATHdnsIPS= "/lib/DNS/dnsIp.txt" # All IPs from DNS
+DNSIP=[] # All IPs of DNS
 
 def loadDnsIP():
     '''
@@ -23,6 +23,6 @@ def loadDnsIP():
 
 if __name__ == "__main__":
     loadDnsIP()
-    dns=DNS(DNSIP,"google.com")
+    dns=DNS(DNSIP)
     dns.viewDNSIps()
-    dns.consultDomain()
+    dns.doConsult("youtube.com")
