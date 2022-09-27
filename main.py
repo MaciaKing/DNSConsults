@@ -24,5 +24,6 @@ def loadDnsIP():
 if __name__ == "__main__":
     loadDnsIP()
     dns=DNS(DNSIP)
-    dns.viewDNSIps()
-    dns.doConsult("youtube.com")
+    #dns.viewDNSIps()
+    #dns.doConsult("csp.omniaccess.com")
+    dns.doConsult2("google.com")
